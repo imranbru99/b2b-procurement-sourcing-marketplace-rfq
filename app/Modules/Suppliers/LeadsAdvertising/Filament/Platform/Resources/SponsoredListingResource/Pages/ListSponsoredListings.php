@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Modules\Suppliers\LeadsAdvertising\Filament\Platform\Resources\SponsoredListingResource\Pages;
+
+use App\Modules\Suppliers\LeadsAdvertising\Filament\Platform\Resources\SponsoredListingResource;
+use Filament\Resources\Pages\ListRecords;
+
+class ListSponsoredListings extends ListRecords
+{
+    protected static string $resource = SponsoredListingResource::class;
+}

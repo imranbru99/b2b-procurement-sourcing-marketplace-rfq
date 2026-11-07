@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.catalog",
+    "name": "Supplier Catalog",
+    "description": "Products, pricing tiers, and bulk import.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.directory"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\Catalog\\ModuleServiceProvider"
+}

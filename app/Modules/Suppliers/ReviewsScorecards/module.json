@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.reviews-scorecards",
+    "name": "Reviews & Scorecards",
+    "description": "Reviews, KPIs, and vendor scorecards.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.directory"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\ReviewsScorecards\\ModuleServiceProvider"
+}

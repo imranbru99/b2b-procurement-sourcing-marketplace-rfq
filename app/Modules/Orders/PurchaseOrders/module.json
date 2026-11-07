@@ -1,0 +1,17 @@
+{
+    "key": "orders.purchase-orders",
+    "name": "Purchase Orders",
+    "description": "Purchase order lifecycle, line items, revisions, and supplier acknowledgment.",
+    "group": "Orders",
+    "icon": "heroicon-o-document-text",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "purchase_orders.view",
+        "purchase_orders.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\PurchaseOrders\\ModuleServiceProvider"
+}

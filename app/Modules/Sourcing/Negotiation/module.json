@@ -1,0 +1,18 @@
+{
+    "key": "sourcing.negotiation",
+    "name": "Negotiation",
+    "description": "Negotiation for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "sourcing.bidding"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "negotiations.view",
+        "negotiations.create",
+        "negotiations.message"
+    ],
+    "provider": "App\\Modules\\Sourcing\\Negotiation\\ModuleServiceProvider"
+}

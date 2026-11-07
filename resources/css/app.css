@@ -1,0 +1,233 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+    --color-teal-950: #042f2e;
+    --color-sand-100: #f5f0e8;
+    --color-sand-200: #e8dfd3;
+    --color-sand-400: #c4a882;
+}
+
+:root {
+    --brand: #0f766e;
+    --brand-deep: #115e59;
+    --sand: #e8dfd3;
+    --sand-soft: #f5f0e8;
+    --heading: #0f172a;
+    --body: #1e293b;
+    --muted: #64748b;
+    --surface: rgba(255, 255, 255, 0.72);
+    --border: rgba(15, 118, 110, 0.15);
+    --hero-glow: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(15, 118, 110, 0.22), transparent 70%),
+        radial-gradient(ellipse 50% 40% at 100% 0%, rgba(196, 168, 130, 0.35), transparent 55%),
+        linear-gradient(180deg, var(--sand-soft) 0%, #ffffff 45%, #f8fafc 100%);
+}
+
+.dark {
+    --heading: #f8fafc;
+    --body: #e2e8f0;
+    --muted: #94a3b8;
+    --surface: rgba(15, 23, 42, 0.65);
+    --border: rgba(45, 212, 191, 0.12);
+    --hero-glow: radial-gradient(ellipse 70% 55% at 50% -5%, rgba(45, 212, 191, 0.15), transparent 65%),
+        radial-gradient(ellipse 40% 35% at 0% 20%, rgba(196, 168, 130, 0.08), transparent 50%),
+        linear-gradient(180deg, #020617 0%, #0f172a 50%, #042f2e 100%);
+}
+
+.font-body {
+    font-family: var(--font-sans);
+}
+
+.font-display {
+    font-family: var(--font-display);
+}
+
+.public-body {
+    background: var(--hero-glow);
+    color: var(--body);
+}
+
+.site-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.full-bleed {
+    @apply w-full;
+}
+
+.demo-banner {
+    @apply border-b border-teal-900/20 bg-teal-950 text-center text-sm text-teal-50;
+}
+
+.demo-banner p {
+    @apply py-2;
+}
+
+.site-header {
+    @apply sticky top-0 z-40 border-b border-[color:var(--border)] backdrop-blur-md;
+    background: color-mix(in srgb, var(--sand-soft) 82%, transparent);
+}
+
+.dark .site-header {
+    background: color-mix(in srgb, #0f172a 88%, transparent);
+}
+
+.brand-lockup {
+    @apply flex items-center gap-3;
+}
+
+.brand-mark {
+    @apply h-9 w-9 rounded-full;
+    background: conic-gradient(from 200deg, var(--brand), #14b8a6, var(--sand), var(--brand));
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--brand) 40%, transparent);
+}
+
+.brand-name {
+    @apply font-display text-sm font-semibold tracking-tight text-[color:var(--heading)] sm:text-base;
+}
+
+.nav-link {
+    @apply text-[color:var(--muted)] transition hover:text-[color:var(--heading)];
+}
+
+.locale-pill {
+    @apply rounded-full px-2.5 py-1 text-[color:var(--muted)] transition;
+}
+
+.locale-pill.is-active {
+    @apply bg-teal-800 text-white dark:bg-teal-600;
+}
+
+.icon-btn {
+    @apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--border)] text-[color:var(--heading)] transition hover:border-teal-700/40;
+}
+
+.btn {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
+}
+
+.btn-primary {
+    @apply bg-teal-800 text-white shadow-sm hover:bg-teal-900 dark:bg-teal-600 dark:hover:bg-teal-500;
+}
+
+.btn-secondary {
+    @apply border border-teal-800/30 bg-[color:var(--surface)] text-teal-900 hover:border-teal-800/60 dark:text-teal-100;
+}
+
+.btn-ghost {
+    @apply text-[color:var(--heading)] underline-offset-4 hover:underline;
+}
+
+.site-section {
+    @apply py-16 md:py-20;
+}
+
+.section-title {
+    @apply font-display text-3xl font-semibold text-[color:var(--heading)];
+}
+
+.hero-atmosphere {
+    background: var(--hero-glow);
+    @apply border-b border-[color:var(--border)];
+}
+
+.hero-inner {
+    @apply py-20 md:py-28 lg:py-32;
+}
+
+.hero-headline {
+    @apply max-w-4xl text-[color:var(--heading)];
+}
+
+.page-hero {
+    @apply border-b border-[color:var(--border)];
+    background: color-mix(in srgb, var(--brand) 6%, transparent);
+}
+
+.band-sand {
+    background: linear-gradient(90deg, color-mix(in srgb, var(--sand) 55%, transparent), transparent);
+}
+
+.band-muted {
+    @apply bg-slate-900/[0.03] dark:bg-slate-50/[0.03];
+}
+
+.cta-atmosphere {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 18%, #0f172a), #042f2e 55%, #0f172a);
+    @apply text-slate-100;
+}
+
+.cta-atmosphere .section-title,
+.cta-atmosphere h2 {
+    @apply text-white;
+}
+
+.step-panel,
+.stat-tile,
+.listing-tile,
+.quote-panel,
+.module-explainer {
+    @apply rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 backdrop-blur-sm transition;
+}
+
+.listing-tile:hover {
+    @apply border-teal-800/35 shadow-sm;
+}
+
+.chip {
+    @apply inline-flex rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-1.5 text-sm font-medium text-[color:var(--heading)] transition hover:border-teal-700/40;
+}
+
+.form-label {
+    @apply mb-1 block text-sm font-medium text-[color:var(--heading)];
+}
+
+.form-input {
+    @apply w-full rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2 text-sm text-[color:var(--body)] outline-none ring-teal-700/30 focus:ring-2;
+}
+
+.form-error {
+    @apply mt-1 text-xs text-red-600 dark:text-red-400;
+}
+
+.footer-link {
+    @apply text-[color:var(--muted)] transition hover:text-[color:var(--heading)];
+}
+
+.site-footer {
+    @apply mt-8 border-t border-[color:var(--border)];
+}
+
+.prose-public {
+    @apply leading-relaxed text-[color:var(--body)];
+}
+
+.prose-public h2 {
+    @apply mt-8 font-display text-xl font-semibold text-[color:var(--heading)];
+}
+
+.module-toggle {
+    @apply rounded-lg px-3 py-2 text-sm text-[color:var(--muted)] transition hover:bg-teal-900/5 hover:text-[color:var(--heading)];
+}
+
+.module-toggle.is-active {
+    @apply bg-teal-800 text-white dark:bg-teal-700;
+}
+
+.reveal {
+    @apply translate-y-3 opacity-0 transition duration-700 ease-out;
+}
+
+.reveal.is-visible {
+    @apply translate-y-0 opacity-100;
+}
+
+[x-cloak] {
+    display: none !important;
+}

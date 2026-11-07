@@ -1,0 +1,14 @@
+{
+    "key": "core.file-manager",
+    "name": "File Manager",
+    "description": "Secure uploads, document vault, and media library integration.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\FileManager\\ModuleServiceProvider"
+}

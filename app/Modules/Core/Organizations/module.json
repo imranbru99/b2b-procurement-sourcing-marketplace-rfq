@@ -1,0 +1,12 @@
+{
+    "key": "core.organizations",
+    "name": "Organizations",
+    "description": "Tenant organizations, membership, and billing context.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Organizations\\ModuleServiceProvider"
+}

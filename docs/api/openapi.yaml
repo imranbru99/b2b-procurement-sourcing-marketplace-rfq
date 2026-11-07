@@ -1,0 +1,67 @@
+openapi: 3.1.0
+info:
+  title: Procurement Marketplace API
+  version: 1.0.0
+  description: |
+    REST API v1 (Sanctum bearer tokens). Tenant scope follows the authenticated
+    user's `current_organization_id`. Demo accounts use `@demo.test` emails when
+    `APP_DEMO=true`.
+servers:
+  - url: /api/v1
+security:
+  - bearerAuth: []
+paths:
+  /rfqs:
+    get:
+      summary: List RFQs
+      tags: [RFQs]
+      responses:
+        '200':
+          description: Paginated RFQ list
+  /rfqs/{id}:
+    get:
+      summary: Show RFQ
+      tags: [RFQs]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: RFQ detail
+  /bids:
+    get:
+      summary: List bids
+      tags: [Bids]
+      responses:
+        '200':
+          description: Paginated bids
+  /suppliers:
+    get:
+      summary: List supplier profiles
+      tags: [Suppliers]
+      responses:
+        '200':
+          description: Paginated suppliers
+  /orders:
+    get:
+      summary: List purchase orders
+      tags: [Orders]
+      responses:
+        '200':
+          description: Paginated orders
+  /me:
+    get:
+      summary: Authenticated user profile
+      tags: [Auth]
+      responses:
+        '200':
+          description: Current user
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: Sanctum

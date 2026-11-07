@@ -1,0 +1,21 @@
+{
+    "key": "sourcing.awards-contracts",
+    "name": "Awards & Contracts",
+    "description": "Awards & Contracts for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "sourcing.bid-scoring",
+        "sourcing.bidding"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "awards.view",
+        "awards.create",
+        "contracts.view",
+        "contracts.create",
+        "contracts.sign"
+    ],
+    "provider": "App\\Modules\\Sourcing\\AwardsContracts\\ModuleServiceProvider"
+}

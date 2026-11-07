@@ -1,0 +1,14 @@
+{
+    "key": "core.audit-log",
+    "name": "Audit Log",
+    "description": "Immutable activity and compliance audit trails.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\AuditLog\\ModuleServiceProvider"
+}

@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.risk-compliance",
+    "name": "Risk & Compliance",
+    "description": "Risk scores, ESG, and approved vendor lists.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.kyc-onboarding"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\RiskCompliance\\ModuleServiceProvider"
+}

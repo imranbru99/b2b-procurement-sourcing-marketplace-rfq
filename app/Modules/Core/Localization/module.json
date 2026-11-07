@@ -1,0 +1,15 @@
+{
+    "key": "core.localization",
+    "name": "Localization",
+    "description": "Locales, currencies, and translation workflows per tenant.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations",
+        "core.settings"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Localization\\ModuleServiceProvider"
+}

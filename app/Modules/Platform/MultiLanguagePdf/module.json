@@ -1,0 +1,17 @@
+{
+    "key": "platform.multi-language-pdf",
+    "name": "PDF Templates",
+    "description": "Multi-language PDF document templates.",
+    "group": "Platform",
+    "icon": "heroicon-o-document",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Platform\\MultiLanguagePdf\\ModuleServiceProvider"
+}

@@ -1,0 +1,14 @@
+{
+    "key": "core.users",
+    "name": "Users",
+    "description": "Organization users, roles, invitations, and profile security.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Users\\ModuleServiceProvider"
+}

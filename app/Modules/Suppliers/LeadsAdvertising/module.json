@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.leads-advertising",
+    "name": "Leads & Advertising",
+    "description": "Sponsored listings, featured suppliers, and coupons.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.directory"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\LeadsAdvertising\\ModuleServiceProvider"
+}

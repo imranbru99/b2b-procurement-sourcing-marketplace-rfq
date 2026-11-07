@@ -1,0 +1,14 @@
+{
+    "key": "marketplace.bids",
+    "name": "Bids",
+    "description": "Supplier bid submission, evaluation, and award workflows.",
+    "group": "Marketplace",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "marketplace.rfq"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [],
+    "provider": "App\\Modules\\Marketplace\\Bids\\ModuleServiceProvider"
+}

@@ -1,0 +1,20 @@
+{
+    "key": "sourcing.bidding",
+    "name": "Bidding",
+    "description": "Bidding for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "sourcing.rfqs"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "bids.view",
+        "bids.create",
+        "bids.submit",
+        "bids.withdraw",
+        "bids.revise"
+    ],
+    "provider": "App\\Modules\\Sourcing\\Bidding\\ModuleServiceProvider"
+}

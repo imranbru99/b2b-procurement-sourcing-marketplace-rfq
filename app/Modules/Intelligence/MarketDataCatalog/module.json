@@ -1,0 +1,17 @@
+{
+    "key": "intelligence.market-data",
+    "name": "Market Data Catalog",
+    "description": "Scraped catalog intelligence, benchmarks, and AI catalog ingest workflow.",
+    "group": "Intelligence",
+    "icon": "heroicon-o-globe-alt",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "market-data.view",
+        "market-data.manage"
+    ],
+    "provider": "App\\Modules\\Intelligence\\MarketDataCatalog\\ModuleServiceProvider"
+}

@@ -1,0 +1,18 @@
+{
+    "key": "operations.logistics",
+    "name": "Logistics",
+    "description": "Shipments, carriers, tracking, freight quotes, and delivery proof.",
+    "group": "Operations",
+    "icon": "heroicon-o-map",
+    "dependencies": [
+        "core.organizations",
+        "orders.purchase-orders"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "logistics.view",
+        "logistics.manage"
+    ],
+    "provider": "App\\Modules\\Operations\\Logistics\\ModuleServiceProvider"
+}

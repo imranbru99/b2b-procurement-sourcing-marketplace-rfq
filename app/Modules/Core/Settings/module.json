@@ -1,0 +1,14 @@
+{
+    "key": "core.settings",
+    "name": "Settings",
+    "description": "Organization and platform settings with scoped key/value storage.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Settings\\ModuleServiceProvider"
+}

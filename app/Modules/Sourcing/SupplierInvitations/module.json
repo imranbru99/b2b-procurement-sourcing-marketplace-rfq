@@ -1,0 +1,18 @@
+{
+    "key": "sourcing.supplier-invitations",
+    "name": "Supplier Invitations",
+    "description": "Supplier Invitations for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "sourcing.rfqs"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "supplier_invitations.view",
+        "supplier_invitations.broadcast",
+        "supplier_invitations.invite"
+    ],
+    "provider": "App\\Modules\\Sourcing\\SupplierInvitations\\ModuleServiceProvider"
+}

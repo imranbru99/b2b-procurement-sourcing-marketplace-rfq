@@ -1,0 +1,14 @@
+{
+    "key": "marketplace.rfq",
+    "name": "RFQ",
+    "description": "Request for quotation lifecycle for buyers.",
+    "group": "Marketplace",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [],
+    "provider": "App\\Modules\\Marketplace\\Rfq\\ModuleServiceProvider"
+}

@@ -1,0 +1,17 @@
+{
+    "key": "orders.goods-receipt",
+    "name": "Goods Receipt",
+    "description": "GRN processing, QC inspections, and returns.",
+    "group": "Orders",
+    "icon": "heroicon-o-truck",
+    "dependencies": [
+        "orders.purchase-orders"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "goods_receipt.view",
+        "goods_receipt.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\GoodsReceipt\\ModuleServiceProvider"
+}

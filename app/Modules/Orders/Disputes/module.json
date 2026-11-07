@@ -1,0 +1,17 @@
+{
+    "key": "orders.disputes",
+    "name": "Disputes",
+    "description": "Order disputes, evidence, and resolutions.",
+    "group": "Orders",
+    "icon": "heroicon-o-scale",
+    "dependencies": [
+        "orders.payments"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "disputes.view",
+        "disputes.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\Disputes\\ModuleServiceProvider"
+}

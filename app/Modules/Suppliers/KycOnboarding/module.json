@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.kyc-onboarding",
+    "name": "KYC Onboarding",
+    "description": "Verification workflow, documents, and blacklist.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.directory"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\KycOnboarding\\ModuleServiceProvider"
+}

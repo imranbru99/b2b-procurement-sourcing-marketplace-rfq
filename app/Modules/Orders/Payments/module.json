@@ -1,0 +1,17 @@
+{
+    "key": "orders.payments",
+    "name": "Payments",
+    "description": "Payments, schedules, proofs, and gateway transactions.",
+    "group": "Orders",
+    "icon": "heroicon-o-banknotes",
+    "dependencies": [
+        "orders.invoicing"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "payments.view",
+        "payments.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\Payments\\ModuleServiceProvider"
+}

@@ -1,0 +1,18 @@
+{
+    "key": "sourcing.bid-scoring",
+    "name": "Bid Scoring",
+    "description": "Bid Scoring for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "sourcing.bidding"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "bid_scoring.view",
+        "bid_scoring.manage",
+        "bid_scoring.evaluate"
+    ],
+    "provider": "App\\Modules\\Sourcing\\BidScoring\\ModuleServiceProvider"
+}

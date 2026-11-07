@@ -1,0 +1,17 @@
+{
+    "key": "platform.security-center",
+    "name": "Security Center",
+    "description": "IP allowlists, sessions, and GDPR.",
+    "group": "Platform",
+    "icon": "heroicon-o-shield-check",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Platform\\SecurityCenter\\ModuleServiceProvider"
+}

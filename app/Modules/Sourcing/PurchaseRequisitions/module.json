@@ -1,0 +1,20 @@
+{
+    "key": "sourcing.purchase-requisitions",
+    "name": "Purchase Requisitions",
+    "description": "Purchase Requisitions for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "purchase_requisitions.view",
+        "purchase_requisitions.create",
+        "purchase_requisitions.update",
+        "purchase_requisitions.approve",
+        "purchase_requisitions.delete"
+    ],
+    "provider": "App\\Modules\\Sourcing\\PurchaseRequisitions\\ModuleServiceProvider"
+}

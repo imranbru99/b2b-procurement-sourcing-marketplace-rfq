@@ -1,0 +1,17 @@
+{
+    "key": "operations.inventory-lite",
+    "name": "Inventory Lite",
+    "description": "Lightweight inventory items, stock levels, and reorder points.",
+    "group": "Operations",
+    "icon": "heroicon-o-cube",
+    "dependencies": [
+        "orders.goods-receipt"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "inventory.view",
+        "inventory.manage"
+    ],
+    "provider": "App\\Modules\\Operations\\InventoryLite\\ModuleServiceProvider"
+}

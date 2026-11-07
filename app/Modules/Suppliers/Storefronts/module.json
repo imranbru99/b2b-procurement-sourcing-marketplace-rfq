@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.storefronts",
+    "name": "Storefronts",
+    "description": "Public supplier mini-sites, portfolio, and media.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "suppliers.directory"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\Storefronts\\ModuleServiceProvider"
+}

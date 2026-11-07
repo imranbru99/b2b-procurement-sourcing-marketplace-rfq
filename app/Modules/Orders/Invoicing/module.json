@@ -1,0 +1,17 @@
+{
+    "key": "orders.invoicing",
+    "name": "Invoicing",
+    "description": "Supplier invoices, line items, credit notes, and tax fields.",
+    "group": "Orders",
+    "icon": "heroicon-o-receipt-percent",
+    "dependencies": [
+        "orders.goods-receipt"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "invoicing.view",
+        "invoicing.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\Invoicing\\ModuleServiceProvider"
+}

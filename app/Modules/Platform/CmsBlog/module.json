@@ -1,0 +1,17 @@
+{
+    "key": "platform.cms-blog",
+    "name": "CMS & Blog",
+    "description": "Pages, blog, FAQs, and banners with SEO.",
+    "group": "Platform",
+    "icon": "heroicon-o-document-text",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Platform\\CmsBlog\\ModuleServiceProvider"
+}

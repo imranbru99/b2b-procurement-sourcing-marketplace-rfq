@@ -1,0 +1,18 @@
+{
+    "key": "intelligence.analytics",
+    "name": "Analytics & Reporting",
+    "description": "Spend analytics, savings tracking, cycle time insights, and scheduled reports.",
+    "group": "Intelligence",
+    "icon": "heroicon-o-presentation-chart-bar",
+    "dependencies": [
+        "core.organizations",
+        "orders.purchase-orders"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "analytics.view",
+        "analytics.manage"
+    ],
+    "provider": "App\\Modules\\Intelligence\\AnalyticsReporting\\ModuleServiceProvider"
+}

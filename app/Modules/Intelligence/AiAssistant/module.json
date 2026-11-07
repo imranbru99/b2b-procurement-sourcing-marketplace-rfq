@@ -1,0 +1,18 @@
+{
+    "key": "intelligence.ai-assistant",
+    "name": "AI Assistant",
+    "description": "Procurement copilot with RFQ drafting, bid summaries, and usage tracking.",
+    "group": "Intelligence",
+    "icon": "heroicon-o-sparkles",
+    "dependencies": [
+        "core.organizations",
+        "core.users"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "ai-assistant.view",
+        "ai-assistant.manage"
+    ],
+    "provider": "App\\Modules\\Intelligence\\AiAssistant\\ModuleServiceProvider"
+}

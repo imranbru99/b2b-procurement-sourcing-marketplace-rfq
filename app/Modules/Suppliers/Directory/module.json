@@ -1,0 +1,17 @@
+{
+    "key": "suppliers.directory",
+    "name": "Supplier Directory",
+    "description": "Supplier profiles, categories, certifications, and discovery.",
+    "group": "Suppliers",
+    "icon": "heroicon-o-building-storefront",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": false,
+    "permissions": [
+        "view",
+        "manage"
+    ],
+    "provider": "App\\Modules\\Suppliers\\Directory\\ModuleServiceProvider"
+}

@@ -1,0 +1,17 @@
+{
+    "key": "operations.inspection-attendance",
+    "name": "Inspection & Attendance",
+    "description": "Inspector assignments, site audits, and AttendanceHub integration.",
+    "group": "Operations",
+    "icon": "heroicon-o-clipboard-document-check",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "inspection.view",
+        "inspection.manage"
+    ],
+    "provider": "App\\Modules\\Operations\\InspectionAttendance\\ModuleServiceProvider"
+}

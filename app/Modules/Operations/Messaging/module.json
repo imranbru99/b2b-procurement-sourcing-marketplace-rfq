@@ -1,0 +1,17 @@
+{
+    "key": "operations.messaging",
+    "name": "Messaging",
+    "description": "Threaded messages with polymorphic subjects and mentions.",
+    "group": "Operations",
+    "icon": "heroicon-o-chat-bubble-left-right",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "messaging.view",
+        "messaging.manage"
+    ],
+    "provider": "App\\Modules\\Operations\\Messaging\\ModuleServiceProvider"
+}

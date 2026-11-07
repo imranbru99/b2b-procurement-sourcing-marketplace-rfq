@@ -1,0 +1,15 @@
+{
+    "key": "core.notifications",
+    "name": "Notifications",
+    "description": "In-app, email, and realtime notification orchestration.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations",
+        "core.settings"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Notifications\\ModuleServiceProvider"
+}

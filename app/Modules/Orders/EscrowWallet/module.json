@@ -1,0 +1,17 @@
+{
+    "key": "orders.escrow-wallet",
+    "name": "Escrow Wallet",
+    "description": "Escrow wallets, milestones, fees, and ledger transactions.",
+    "group": "Orders",
+    "icon": "heroicon-o-wallet",
+    "dependencies": [
+        "orders.payments"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "escrow.view",
+        "escrow.manage"
+    ],
+    "provider": "App\\Modules\\Orders\\EscrowWallet\\ModuleServiceProvider"
+}

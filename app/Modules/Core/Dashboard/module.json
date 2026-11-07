@@ -1,0 +1,14 @@
+{
+    "key": "core.dashboard",
+    "name": "Dashboard",
+    "description": "Role-aware KPI dashboards for buyers, suppliers, and logistics.",
+    "group": "Core",
+    "icon": "heroicon-o-puzzle-piece",
+    "dependencies": [
+        "core.organizations"
+    ],
+    "is_core": true,
+    "default_enabled": true,
+    "permissions": [],
+    "provider": "App\\Modules\\Core\\Dashboard\\ModuleServiceProvider"
+}

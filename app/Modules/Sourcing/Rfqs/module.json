@@ -1,0 +1,21 @@
+{
+    "key": "sourcing.rfqs",
+    "name": "RFQs",
+    "description": "RFQs for buyer sourcing workflows.",
+    "group": "Sourcing",
+    "icon": "heroicon-o-shopping-cart",
+    "dependencies": [
+        "core.organizations",
+        "sourcing.purchase-requisitions"
+    ],
+    "is_core": false,
+    "default_enabled": true,
+    "permissions": [
+        "rfqs.view",
+        "rfqs.create",
+        "rfqs.update",
+        "rfqs.publish",
+        "rfqs.delete"
+    ],
+    "provider": "App\\Modules\\Sourcing\\Rfqs\\ModuleServiceProvider"
+}
